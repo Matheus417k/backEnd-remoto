@@ -1,0 +1,1753 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Projeto_S1_R3_R4 - AT5_PBE 2
+meta:
+  id: wrk_e7dd82e2dd7943d8968d66e105e0b7a3
+  created: 1779212276794
+  modified: 1779212276794
+  description: ""
+collection:
+  - name: Pedidos teste
+    meta:
+      id: fld_7e7f924ef14d4bfa807d23a0c4cc0007
+      created: 1779808846630
+      modified: 1779808846630
+      sortKey: -1779808846630
+      description: ""
+    children:
+      - url: http://localhost:8000/pedidos
+        name: New Request
+        meta:
+          id: req_2a134002cbb24f9f878452df85a79bac
+          created: 1779212351132
+          modified: 1780408774645
+          isPrivate: false
+          description: ""
+          sortKey: -1779808853995
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "itens": [
+                {
+                  "idProduto": ,
+                  "quantidade": 
+                },
+            		{
+            			"idProduto": ,
+                  "quantidade": 
+            		}
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/
+        name: New Request
+        meta:
+          id: req_7beb1f305f9448d7a3b9556c1edef304
+          created: 1779212375028
+          modified: 1780408780471
+          isPrivate: false
+          description: ""
+          sortKey: -1779808854195
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"statusPedido": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos
+        name: New Request
+        meta:
+          id: req_21a6d46e6fbb43dc8716998afacbb17f
+          created: 1779212936832
+          modified: 1779808884745
+          isPrivate: false
+          description: ""
+          sortKey: -1779808853895
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/
+        name: New Request
+        meta:
+          id: req_c1a1fc0ec95a4ffa962f84f08ff96703
+          created: 1780070310695
+          modified: 1780408784832
+          isPrivate: false
+          description: ""
+          sortKey: -1780070310695
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos
+    meta:
+      id: fld_50ac5a0feffc46d9882c811a344c06e4
+      created: 1779808868747
+      modified: 1779808868747
+      sortKey: -1779808868747
+      description: ""
+    children:
+      - url: http://localhost:8000/produtos/
+        name: New Request
+        meta:
+          id: req_60d6fea0fa9446cc830025c7b2548ba4
+          created: 1779809064974
+          modified: 1780408751150
+          isPrivate: false
+          description: ""
+          sortKey: -1779809064974
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos/
+        name: New Request
+        meta:
+          id: req_656b7a3c6d1b401b93b2693d4f30664c
+          created: 1779809068388
+          modified: 1780408764594
+          isPrivate: false
+          description: ""
+          sortKey: -1779809068388
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"idCategoria": ,
+            	"nomeProduto": "",
+            	"descricaoProduto": "",
+            	"preco": ,
+            	"estoque": 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: New Request
+        meta:
+          id: req_c0fbe4c4ebb14c3e88fac981572597df
+          created: 1779809608010
+          modified: 1780408742309
+          isPrivate: false
+          description: ""
+          sortKey: -1779808966477.5
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: ""
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: ""
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: ""
+              description: ""
+              disabled: false
+            - name: preco
+              value: ""
+              description: ""
+              disabled: false
+            - name: estoque
+              value: ""
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: New Request
+        meta:
+          id: req_f291de4d556a451691336d67047b3023
+          created: 1779809623477
+          modified: 1779809658026
+          isPrivate: false
+          description: ""
+          sortKey: -1779808863101
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Itens Pedido
+    meta:
+      id: fld_be416ce2c40440b980253f4612004f09
+      created: 1779809094816
+      modified: 1779809281552
+      sortKey: -1779809094816
+      description: ""
+    children:
+      - url: http://localhost:8000/pedidos//itens
+        name: New Request
+        meta:
+          id: req_da26367ade86451abbba2685a4da0c7f
+          created: 1779809104641
+          modified: 1780408799389
+          isPrivate: false
+          description: ""
+          sortKey: -1779809104641
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "itens": [
+                {
+                  "idProduto": ,
+                  "quantidade": 
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos//itens/
+        name: New Request
+        meta:
+          id: req_c4d2fe0750df4c83aea8619d168cf049
+          created: 1779809106337
+          modified: 1780408806100
+          isPrivate: false
+          description: ""
+          sortKey: -1779809106337
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "quantidade": 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos//itens/
+        name: New Request
+        meta:
+          id: req_ea3d5c4c84e94fe7bd34f411ef5200ca
+          created: 1779809107751
+          modified: 1780408809803
+          isPrivate: false
+          description: ""
+          sortKey: -1779809107751
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categoria
+    meta:
+      id: fld_3ac3a14f712f4922941556d3700d24bb
+      created: 1780398698885
+      modified: 1780398698885
+      sortKey: -1780398698885
+      description: ""
+    children:
+      - url: http://localhost:8000/categorias/
+        name: New Request
+        meta:
+          id: req_8e7120ccb61f4392b9c2d777e9d886c3
+          created: 1780398702838
+          modified: 1780408827193
+          isPrivate: false
+          description: ""
+          sortKey: -1780398705161
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: New Request
+        meta:
+          id: req_4126ee4b324a488cbf836e021b5c3135
+          created: 1780398710426
+          modified: 1780398750308
+          isPrivate: false
+          description: ""
+          sortKey: -1780234507928
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: New Request
+        meta:
+          id: req_e67a3bd4530846a1a65858850c0e2fdd
+          created: 1780398712876
+          modified: 1780408817358
+          isPrivate: false
+          description: ""
+          sortKey: -1780316606544.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias/
+        name: New Request
+        meta:
+          id: req_445780535f214a4daea7fecd3b401c0d
+          created: 1780398777430
+          modified: 1780398779788
+          isPrivate: false
+          description: ""
+          sortKey: -1780357655852.75
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos APi
+    meta:
+      id: fld_2953d17bc6a846d3aeaceba5de4af24f
+      created: 1780408686432
+      modified: 1780408686432
+      sortKey: -1780408686432
+      description: ""
+    children:
+      - url: http://localhost:8000/produtos
+        name: Placa de Vídeo
+        meta:
+          id: req_6d6a987fd97345b0ae39ac069ffd4d1f
+          created: 1780412951285
+          modified: 1780416069750
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068318
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Placa de Vídeo Rtx 5090
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "20000.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "50"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Placa_Video.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: New Request
+        meta:
+          id: req_5397aabc6dad4a3bbd8c8aa3ecb0198a
+          created: 1780412967890
+          modified: 1780416068248
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068218
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Placa mãe
+        meta:
+          id: req_a3a4266528734022beb46e7b7ae2ce2a
+          created: 1780413365985
+          modified: 1780416070837
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068418
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Placa mãe Crosshair B850
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "2050.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "90"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Placa_mae.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Processador
+        meta:
+          id: req_af5f09aaaf9646589aebe7ba1ec7dd34
+          created: 1780413530379
+          modified: 1780416074998
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068518
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Core Ultra 5
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Intel
+              description: ""
+              disabled: false
+            - name: preco
+              value: "1300.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "100"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\processadorCore.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Teclado
+        meta:
+          id: req_c31b9f7b9301429890d45734184f225b
+          created: 1780413640844
+          modified: 1780416100748
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069318
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Teclado mecânico
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "250.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "500"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Teclado.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Mouse 1
+        meta:
+          id: req_febda89afbca41518e0accdb276e205c
+          created: 1780413712201
+          modified: 1780416102088
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069418
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Mouse gamer Ultra V8 Wireless
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "150.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "700"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Mouse.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Headset
+        meta:
+          id: req_cb678bb5ee0745a1a813ec92850dd2e2
+          created: 1780413809166
+          modified: 1780416103138
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069518
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Headset gamer wireles
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "200.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "550"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Fone.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Mouse Pad
+        meta:
+          id: req_7040e1a7670f4db4b9950a95d1829f7c
+          created: 1780414112622
+          modified: 1780416104761
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069618
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Mouse Pad Extra Large
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "75.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "1000"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Mouse_Pad.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Headset 2
+        meta:
+          id: req_2a817360e1f3438a937bad7663429d7b
+          created: 1780414233411
+          modified: 1780416105962
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069718
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Headset Gengar
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Razer
+              description: ""
+              disabled: false
+            - name: preco
+              value: "1180.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "60"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\foneGengar.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Placa de vídeo 2
+        meta:
+          id: req_53b145b3e5394ca5bc137b8a60a73447
+          created: 1780414345931
+          modified: 1780416078067
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068618
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Placa de vídeo Rtx 4060
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Gigabyte
+              description: ""
+              disabled: false
+            - name: preco
+              value: "2000.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "125"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\placaVideoEntrada.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Fonte
+        meta:
+          id: req_638accce12104f32b40a2e8d92b4a422
+          created: 1780414462373
+          modified: 1780416079190
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068718
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Fonte 850w
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "760.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "230"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Fonte.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: SSD
+        meta:
+          id: req_41392f6f0bec400ea374355d3481ce51
+          created: 1780414545136
+          modified: 1780416081311
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068818
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: SSD NVMe 1TB
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Samsung
+              description: ""
+              disabled: false
+            - name: preco
+              value: "2250.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "175"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\SSD.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Water-Cooler
+        meta:
+          id: req_c056b49c506a44c7af044526b8fc98e6
+          created: 1780414679690
+          modified: 1780416089926
+          isPrivate: false
+          description: ""
+          sortKey: -1780416068918
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Water-Cooler Lc || 280 ARGB
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "350.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "800"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Water_cooler.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Placa mãe 2
+        meta:
+          id: req_b2fa3a2409da4ecca0f591384aaa0d23
+          created: 1780414799886
+          modified: 1780416092203
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069018
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Placa mãe A520m K V2
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Gigabyte
+              description: ""
+              disabled: false
+            - name: preco
+              value: "380.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "900"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\placaMaeEntrada.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Gabinete
+        meta:
+          id: req_9fc66248d95d4a55bbc486e951eb09f2
+          created: 1780415033375
+          modified: 1780416097747
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069118
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Gabinete Gamer Helios
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "2150.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "30"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Gabinete.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Gabinete 2
+        meta:
+          id: req_759cee7513ba4286960f54a6ada6e336
+          created: 1780415137548
+          modified: 1780416099560
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069218
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "1"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Gabinete Gamer Aquário
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Montech
+              description: ""
+              disabled: false
+            - name: preco
+              value: "230.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "875"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\GabineteSimples.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Console
+        meta:
+          id: req_4dde5fb609d447ab9506d8c91ecc220c
+          created: 1780415276647
+          modified: 1780416108151
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069818
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "3"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Xbox Ally
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: ROG
+              description: ""
+              disabled: false
+            - name: preco
+              value: "3500.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "75"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\consolePortatil.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Notebook
+        meta:
+          id: req_55bf97ee87b04bcfa3b841c2953da4a4
+          created: 1780415344553
+          modified: 1780416109454
+          isPrivate: false
+          description: ""
+          sortKey: -1780416069918
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "4"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Notebook Gamer Aurora
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Infinity
+              description: ""
+              disabled: false
+            - name: preco
+              value: "7500.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "25"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\notebook.png
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Notebook 2
+        meta:
+          id: req_821dcd43d4b8468caffcacaf55cb9c65
+          created: 1780415561627
+          modified: 1780416110797
+          isPrivate: false
+          description: ""
+          sortKey: -1780416070018
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "4"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: NotebookI5 8gb 512gb Ssd Rtx 3050
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Dell
+              description: ""
+              disabled: false
+            - name: preco
+              value: "5000.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "35"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\notebookDell.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: Monitor
+        meta:
+          id: req_c6fa5ae9f0724549a4bc84159e9a84af
+          created: 1780415858263
+          modified: 1780416112332
+          isPrivate: false
+          description: ""
+          sortKey: -1780416070118
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "5"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Monitor gamer UltraGear
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: LG
+              description: ""
+              disabled: false
+            - name: preco
+              value: "800.00"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "450"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Documents\3ºSEM\PBE2\ProjetoFinal(agora_sim)\BACK-END\docs\imagens\public\Monitor.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categoria API
+    meta:
+      id: fld_e79fcb184fa441ffad0b57154848062d
+      created: 1780408700855
+      modified: 1780408700855
+      sortKey: -1780408700855
+      description: ""
+    children:
+      - url: http://localhost:8000/categorias
+        name: hardware
+        meta:
+          id: req_e0c613dde4cf47f5a73199d81049960e
+          created: 1780412916430
+          modified: 1780415940205
+          isPrivate: false
+          description: ""
+          sortKey: -1780412920629
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "hardware",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: New Request
+        meta:
+          id: req_1ffa0a247fd74f86b864ec9768037cf6
+          created: 1780412931809
+          modified: 1780412934238
+          isPrivate: false
+          description: ""
+          sortKey: -1780412920729
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: Periféricos
+        meta:
+          id: req_a00f0c89c1dd4616ba6611068ffbc4b7
+          created: 1780413093892
+          modified: 1780415947170
+          isPrivate: false
+          description: ""
+          sortKey: -1780410179308.8125
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "periféricos",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: Consoles
+        meta:
+          id: req_364acc5dc2e14ddabfb95dbe8c946ab2
+          created: 1780413123254
+          modified: 1780415955764
+          isPrivate: false
+          description: ""
+          sortKey: -1780408808648.7188
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "consoles",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: Notebooks
+        meta:
+          id: req_1ef079b51d31472c81985daf143977c1
+          created: 1780413168475
+          modified: 1780415975441
+          isPrivate: false
+          description: ""
+          sortKey: -1780408123318.6719
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "notebooks",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/categorias
+        name: Monitores
+        meta:
+          id: req_4c7e1bba0892475f8f6a86eaff142ab8
+          created: 1780413226992
+          modified: 1780415986637
+          isPrivate: false
+          description: ""
+          sortKey: -1780407780653.6484
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "monitores",
+            	"descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1007c97c162ceae749f77d959d55c747e3da8f89
+    created: 1779212276807
+    modified: 1779212276807
+environments:
+  name: Base Environment
+  meta:
+    id: env_1007c97c162ceae749f77d959d55c747e3da8f89
+    created: 1779212276802
+    modified: 1779212276802
+    isPrivate: false

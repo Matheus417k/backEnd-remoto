@@ -1,0 +1,132 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Categoria
+meta:
+  id: wrk_40bf0603d80546f094ef45c0960416a7
+  created: 1778867390834
+  modified: 1778868298915
+  description: ""
+collection:
+  - url: localhost:8000/categorias
+    name: Criar Categoria
+    meta:
+      id: req_df7ede94ac3c47d188190b0093c2b1a0
+      created: 1778868117519
+      modified: 1779453721274
+      isPrivate: false
+      description: ""
+      sortKey: -1778867391115
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome":"pereira",
+        	"descricao":"Categoria destinada a acessórios"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8000/categorias
+    name: Listar Categoria
+    meta:
+      id: req_bb734b0ca0794e54ab78c9e34da8415a
+      created: 1779218277766
+      modified: 1779453714686
+      isPrivate: false
+      description: ""
+      sortKey: -1779218277766
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8000/categorias/1
+    name: Atualizar Categoria
+    meta:
+      id: req_d06acc4679c840ea8ba7dc9a6eff798b
+      created: 1779218298889
+      modified: 1779453705677
+      isPrivate: false
+      description: ""
+      sortKey: -1779218298889
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome":"Perifericos",
+        	"descricao":"Categoria destinada a acessórios"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8000/categorias/1
+    name: Deletar Categoria
+    meta:
+      id: req_0c40f1ce38414586adb68bde167e0d51
+      created: 1779218341060
+      modified: 1779453695224
+      isPrivate: false
+      description: ""
+      sortKey: -1779218341060
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1f3628ad969a324b9970d64f573a96e8e71f94a2
+    created: 1778867390856
+    modified: 1778867390856
+environments:
+  name: Base Environment
+  meta:
+    id: env_1f3628ad969a324b9970d64f573a96e8e71f94a2
+    created: 1778867390846
+    modified: 1778867390846
+    isPrivate: false

@@ -1,0 +1,388 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Projeto_S1_R3_R4 - AT5_PBE 2
+meta:
+  id: wrk_e7dd82e2dd7943d8968d66e105e0b7a3
+  created: 1779212276794
+  modified: 1779212276794
+  description: ""
+collection:
+  - name: Pedidos teste
+    meta:
+      id: fld_7e7f924ef14d4bfa807d23a0c4cc0007
+      created: 1779808846630
+      modified: 1779808846630
+      sortKey: -1779808846630
+      description: ""
+    children:
+      - url: http://localhost:8000/pedidos
+        name: New Request
+        meta:
+          id: req_2a134002cbb24f9f878452df85a79bac
+          created: 1779212351132
+          modified: 1780068236950
+          isPrivate: false
+          description: ""
+          sortKey: -1779808853995
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "itens": [
+                {
+                  "idProduto": 4,
+                  "quantidade": 90
+                },
+            		{
+            			"idProduto": 2,
+                  "quantidade": 1
+            		}
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/8
+        name: New Request
+        meta:
+          id: req_7beb1f305f9448d7a3b9556c1edef304
+          created: 1779212375028
+          modified: 1780068277536
+          isPrivate: false
+          description: ""
+          sortKey: -1779808854195
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"statusPedido": "Aberto"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos
+        name: New Request
+        meta:
+          id: req_21a6d46e6fbb43dc8716998afacbb17f
+          created: 1779212936832
+          modified: 1779808884745
+          isPrivate: false
+          description: ""
+          sortKey: -1779808853895
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/12
+        name: New Request
+        meta:
+          id: req_c1a1fc0ec95a4ffa962f84f08ff96703
+          created: 1780070310695
+          modified: 1780070329283
+          isPrivate: false
+          description: ""
+          sortKey: -1780070310695
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos
+    meta:
+      id: fld_50ac5a0feffc46d9882c811a344c06e4
+      created: 1779808868747
+      modified: 1779808868747
+      sortKey: -1779808868747
+      description: ""
+    children:
+      - url: http://localhost:8000/produtos/7
+        name: New Request
+        meta:
+          id: req_60d6fea0fa9446cc830025c7b2548ba4
+          created: 1779809064974
+          modified: 1780070260203
+          isPrivate: false
+          description: ""
+          sortKey: -1779809064974
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos/5
+        name: New Request
+        meta:
+          id: req_656b7a3c6d1b401b93b2693d4f30664c
+          created: 1779809068388
+          modified: 1780068103257
+          isPrivate: false
+          description: ""
+          sortKey: -1779809068388
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"idCategoria": 6,
+            	"nomeProduto": "Tecladous",
+            	"descricaoProduto": "",
+            	"preco": 67.00,
+            	"estoque": 67
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: New Request
+        meta:
+          id: req_c0fbe4c4ebb14c3e88fac981572597df
+          created: 1779809608010
+          modified: 1780067961864
+          isPrivate: false
+          description: ""
+          sortKey: -1779808966477.5
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "6"
+              description: ""
+              disabled: false
+            - name: nomeProduto
+              value: Gabinete Branco
+              description: ""
+              disabled: false
+            - name: descricaoProduto
+              value: Gabinete branco infinity q o matheus criou, mó otario
+              description: ""
+              disabled: false
+            - name: preco
+              value: "200"
+              description: ""
+              disabled: false
+            - name: estoque
+              value: "1000"
+              description: ""
+              disabled: false
+            - name: image
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44176972807\Downloads\1993-vauxhall-carlton-687660fd96b93.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/produtos
+        name: New Request
+        meta:
+          id: req_f291de4d556a451691336d67047b3023
+          created: 1779809623477
+          modified: 1779809658026
+          isPrivate: false
+          description: ""
+          sortKey: -1779808863101
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Itens Pedido
+    meta:
+      id: fld_be416ce2c40440b980253f4612004f09
+      created: 1779809094816
+      modified: 1779809281552
+      sortKey: -1779809094816
+      description: ""
+    children:
+      - url: http://localhost:8000/pedidos/11/itens
+        name: New Request
+        meta:
+          id: req_da26367ade86451abbba2685a4da0c7f
+          created: 1779809104641
+          modified: 1780069519833
+          isPrivate: false
+          description: ""
+          sortKey: -1779809104641
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "itens": [
+                {
+                  "idProduto": 4,
+                  "quantidade": 2
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/11/itens/7
+        name: New Request
+        meta:
+          id: req_c4d2fe0750df4c83aea8619d168cf049
+          created: 1779809106337
+          modified: 1780070174177
+          isPrivate: false
+          description: ""
+          sortKey: -1779809106337
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "quantidade": 90
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/pedidos/11/itens/7
+        name: New Request
+        meta:
+          id: req_ea3d5c4c84e94fe7bd34f411ef5200ca
+          created: 1779809107751
+          modified: 1780070294265
+          isPrivate: false
+          description: ""
+          sortKey: -1779809107751
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1007c97c162ceae749f77d959d55c747e3da8f89
+    created: 1779212276807
+    modified: 1779212276807
+environments:
+  name: Base Environment
+  meta:
+    id: env_1007c97c162ceae749f77d959d55c747e3da8f89
+    created: 1779212276802
+    modified: 1779212276802
+    isPrivate: false
