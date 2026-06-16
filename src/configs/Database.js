@@ -56,12 +56,13 @@ export async function initializeDatabase() {
         // Pega o nome do banco do seu .env ('infinity')
         const dbName = process.env.DB_DATABASE || 'infinity'; 
 
+        await tempConnection.query(`DROP DATABASE IF EXISTS \`${dbName}\`;`);
         await tempConnection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\`;`);
         await tempConnection.query(`USE \`${dbName}\`;`);
 
         // 1. Criando a tabela Categorias
         await tempConnection.query(`
-            CREATE TABLE IF NOT EXISTS Categorias (
+            CREATE TABLE IF NOT EXISTS categorias (
                 IdCategoria INT AUTO_INCREMENT PRIMARY KEY,
                 NomeCategoria VARCHAR(100) NOT NULL,
                 Descricao VARCHAR(255),
