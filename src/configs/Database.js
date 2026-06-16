@@ -56,7 +56,7 @@ export async function initializeDatabase() {
         // Pega o nome do banco do seu .env ('infinity')
         const dbName = process.env.DB_DATABASE || 'infinity'; 
 
-        await tempConnection.query(`DROP DATABASE IF EXISTS \`${dbName}\`;`);
+        //await tempConnection.query(`DROP DATABASE IF EXISTS \`${dbName}\`;`);
         await tempConnection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\`;`);
         await tempConnection.query(`USE \`${dbName}\`;`);
 
